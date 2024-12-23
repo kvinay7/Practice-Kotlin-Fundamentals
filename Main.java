@@ -20,22 +20,14 @@ public class Main {
 		
 		System.out.println("without streams");
 		List<Integer> newList = new ArrayList<>();
+		
 		for(Integer i:list) {
 			if(i%2==0) {
 				newList.add(multiply(i));
 			}
 		}
-		//sorting
-		for(int i=0; i<newList.size(); i++) {
-			for(int j=i+1; j<newList.size(); j++) {
-				if(newList.get(i)>newList.get(j)) {
-					//swapping
-					newList.set(i,newList.get(i)+newList.get(j));
-					newList.set(j,newList.get(i)-newList.get(j));
-					newList.set(i,newList.get(i)-newList.get(j));
-				}
-			}
-		}
+	
+		Collections.sort(newList);
 		for(Integer list1:newList) {
 			System.out.println(list1);
 		}
