@@ -38,3 +38,21 @@ public class Main {
 	}
 
 }
+
+| # | Program | Concepts Practiced |
+|:--|:--|:--|
+| 1 | **Find all even numbers** from a List of Integers | Filtering |
+| 2 | **Find all strings starting with "A"** from a List of Strings | Filtering |
+| 3 | **Find the maximum number** in a List of Integers | Reduce / Aggregate |
+| 4 | **Sum of all numbers** in a List | Reduce |
+| 5 | **Sort a list of strings** alphabetically | Sorting |
+| 6 | **Sort list of employees by salary** (Employee class: name, salary) | Custom Comparator |
+| 7 | **Convert List of Strings to Uppercase** | Mapping |
+| 8 | **Create a list of squares** from a list of numbers | Mapping |
+| 9 | **Remove duplicates** from a list of integers | Distinct elements |
+| 10 | **Count frequency of each word** in a List<String> | Grouping and Counting |
+| 11 | **Find the first element greater than 50** from List<Integer> | FindFirst / Filtering |
+| 12 | **Partition numbers into even and odd lists** | Partitioning |
+| 13 | **Group employees by department** | GroupingBy |
+| 14 | **Flatten a list of lists** into a single list (List<List<Integer>> to List<Integer>) | flatMap |
+| 15 | **Find second highest number** from List<Integer> | Custom Sorting + Skip |
