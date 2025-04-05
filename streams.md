@@ -16,6 +16,8 @@
 | 14 | **Flatten a list of lists** into a single list (List<List<Integer>> to List<Integer>) | flatMap |
 | 15 | **Find second highest number** from List<Integer> | Custom Sorting + Skip |
 
+---
+
 ```java
 
 import java.util.ArrayList;
