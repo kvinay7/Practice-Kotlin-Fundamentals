@@ -1,4 +1,4 @@
-**Stream API Practice Problems**
+# **Stream API Practice Problems**
 
 ## 🔹 Beginner Problems
 
