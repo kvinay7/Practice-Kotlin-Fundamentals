@@ -1,62 +1,76 @@
-| # | Program | Concepts Practiced |
-|:--|:--|:--|
-| 1 | **Find all even numbers** from a List of Integers | Filtering |
-| 2 | **Find all strings starting with "A"** from a List of Strings | Filtering |
-| 3 | **Find the maximum number** in a List of Integers | Reduce / Aggregate |
-| 4 | **Sum of all numbers** in a List | Reduce |
-| 5 | **Sort a list of strings** alphabetically | Sorting |
-| 6 | **Sort list of employees by salary** (Employee class: name, salary) | Custom Comparator |
-| 7 | **Convert List of Strings to Uppercase** | Mapping |
-| 8 | **Create a list of squares** from a list of numbers | Mapping |
-| 9 | **Remove duplicates** from a list of integers | Distinct elements |
-| 10 | **Count frequency of each word** in a List<String> | Grouping and Counting |
-| 11 | **Find the first element greater than 50** from List<Integer> | FindFirst / Filtering |
-| 12 | **Partition numbers into even and odd lists** | Partitioning |
-| 13 | **Group employees by department** | GroupingBy |
-| 14 | **Flatten a list of lists** into a single list (List<List<Integer>> to List<Integer>) | flatMap |
-| 15 | **Find second highest number** from List<Integer> | Custom Sorting + Skip |
+**Stream API Practice Problems**
+
+## 🔹 Beginner Problems
+
+1. Filter even numbers from a list of integers.  
+2. Convert a list of integers into their squares.  
+3. Find the sum of all numbers in a list.  
+4. Convert a list of strings to uppercase.  
+5. Count how many elements are greater than 10.  
 
 ---
 
-```java
+## 🔹 Intermediate Operations
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import static java.lang.System.out;
+6. Filter all strings that contain the letter ‘e’.  
+7. Convert employee names to uppercase.  
+8. Flatten a list of lists of integers into a single list.  
+9. Remove duplicates from a list of integers.  
+10. Sort a list of strings alphabetically.  
+11. Sort a list of strings by length.  
+12. Log each squared number before collecting it.  
+13. Return the first 5 elements of a list.  
+14. Skip the first 3 strings in a list.  
 
+---
 
-public class Main {
+## 🔹 Terminal Operations
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-		List<Integer> list = Arrays.asList(3,8,5,7,4,1,6,2);
-		
-		System.out.println("with streams");
-		list.stream()
-			.filter(x -> x%2==0)	//lamda expression
-			.map(Main::multiply)	//method reference
-			.sorted()
-			.forEach(out::println); 
-		
-		System.out.println("without streams");
-		List<Integer> newList = new ArrayList<>();
-		
-		for(Integer i:list) {
-			if(i%2==0) {
-				newList.add(multiply(i));
-			}
-		}
-	
-		Collections.sort(newList);
-		for(Integer list1:newList) {
-			System.out.println(list1);
-		}
-		
-	}
-	public static int multiply(int x) {
-		return x*2;
-	}
-}
-```
+15. Print each element of a list of names.  
+16. Convert a list of strings to an array.  
+17. Find the product of all numbers in a list.  
+18. Collect a stream into a list.  
+19. Collect a stream into a set.  
+20. Find the minimum value in a list of integers.  
+21. Find the maximum value in a list of integers.  
+22. Count strings with length greater than 3.  
+
+---
+
+## 🔹 Matching & Finding
+
+23. Check if any name starts with "A".  
+24. Check if all numbers are positive.  
+25. Verify that no element in the list is null.  
+26. Find the first even number in a list.  
+27. Find any string starting with “B” from a parallel stream.  
+
+---
+
+## 🔹 Collectors & Grouping
+
+28. Join a list of strings with a comma.  
+29. Convert a list of users into a map with userId as key and userName as value.  
+30. Group a list of strings by their first character.  
+31. Partition a list of integers into even and odd numbers.  
+32. Get the top 3 largest numbers from a list.  
+
+---
+
+## 🔹 Advanced Problems
+
+33. Compute the frequency of each character in a string.  
+34. Find all duplicates in a list of integers.  
+35. Find the longest word in a sentence.  
+36. Create a custom collector to collect elements into a LinkedList.  
+37. From a list of Person objects with Orders, get all unique products.  
+38. Group employees by department and then by designation.  
+
+---
+
+## 🔹 Primitive Stream Operations
+
+39. Convert a list of prices into average, sum, min, and max using summary statistics.  
+40. Use `IntSummaryStatistics` to analyze a list of integers.  
+
+---
