@@ -8,17 +8,17 @@
         return maxLen;
     }
 
-    private void find(int[] nums, int i, int prev, int cnt) {
+    private void find(int[] nums, int i, int prev, int curLen) {
         if (i == nums.length) {
-            if (maxLen < cnt) {
-                maxLen = cnt;
+            if (maxLen < curLen) {
+                maxLen = curLen;
             }
             return;
         }
 
         if (prev < nums[i]) 
-            find(nums, i+1, nums[i], cnt+1);
-        find(nums, i+1, prev, cnt);
+            find(nums, i+1, nums[i], curLen + 1);
+        find(nums, i+1, prev, curLen);
     }
   }
 ```
@@ -35,13 +35,13 @@
         return res;
     }
 
-    private void find(int[] nums, int i, int prev, int cnt) {
+    private void find(int[] nums, int i, int prev, int curLen) {
         if (i == nums.length) {
-            if (maxLen < cnt) {
-                maxLen = cnt;
+            if (maxLen < curLen) {
+                maxLen = curLen;
                 res = 1;
             }
-            else if (maxLen == cnt) {
+            else if (maxLen == curLen) {
                 res++;
             }
             
@@ -49,8 +49,8 @@
         }
 
         if (prev < nums[i]) 
-            find(nums, i+1, nums[i], cnt+1);
-        find(nums, i+1, prev, cnt);
+            find(nums, i+1, nums[i], curLen + 1);
+        find(nums, i+1, prev, curLen);
     }
   }
 ```
