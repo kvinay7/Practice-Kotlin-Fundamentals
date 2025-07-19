@@ -74,7 +74,10 @@ public class StringAndStringBuilderDemo {
       String trimmed = input.trim();
       System.out.println("trim(): " + trimmed); // Output: Hello, World! Welcome to Java
 
-      // === StringBuilder Methods ===
+     
+    
+    
+    // === StringBuilder Methods ===
       System.out.println("\n=== StringBuilder Methods ===");
       
       // 1. Initialization
